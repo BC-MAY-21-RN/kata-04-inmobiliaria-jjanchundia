@@ -14,11 +14,7 @@ const Cards = () => {
         <View>
             <Informacion/>
         </View>
-        // <View >
-        //     <Text>Tetre</Text>
-        // </View> 
     )
-
 }
 
 // const styles = StyleSheet.create({

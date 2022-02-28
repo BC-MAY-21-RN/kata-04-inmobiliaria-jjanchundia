@@ -2,18 +2,17 @@
 import React from 'react';
 import { View, Text, StatusBar, FlatList, StyleSheet } from 'react-native';
 import dataCards from '../utils/Data';
-import InmobiliariaC from './Inmobiliaria';
+import ListItem from './ListItem';
 
 const InformacionView = () => {
     console.log(dataCards.map(x=>x.Nombre));
     return (
         <View style={styles.container}>
-          <Text>TEST2</Text>
             <FlatList
                 data={dataCards}
                 keyExtractor={(item) => item.id}
                 renderItem={(item)=>{
-                  return (<InmobiliariaC dataCards = {item}/>);
+                  return (<ListItem dataCards = {item}/>);
                 }}
             />
         </View>
@@ -25,7 +24,7 @@ const InformacionView = () => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      marginTop: StatusBar.currentHeight || 0,
+      marginBottom:10,
       width: '100%',
       height: '100%',
     },

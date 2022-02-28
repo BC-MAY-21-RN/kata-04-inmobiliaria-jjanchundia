@@ -10,7 +10,6 @@
  * @flow strict-local
  */
 
-
  import React from 'react';
  import { SafeAreaView, StyleSheet, Platform, Text, ScrollView } from 'react-native';
  import Cards from './src/components/Cards.js';
@@ -20,7 +19,7 @@ const App = () => {
   return (
     <SafeAreaView>
       <ScrollView>
-      <Cards/>
+        <Cards/>
       </ScrollView>
     </SafeAreaView>
   );
