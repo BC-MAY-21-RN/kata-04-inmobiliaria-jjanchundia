@@ -13,7 +13,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.7',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.5',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 3,
@@ -35,7 +35,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.8',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 4,
@@ -46,7 +46,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.9',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '5',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 6,
@@ -68,7 +68,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 7,
@@ -79,7 +79,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.7',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 8,
@@ -90,7 +90,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.5',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 9,
@@ -101,7 +101,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$4401',
         Calificacion: '4.7',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 10,
@@ -112,7 +112,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.8',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 11,
@@ -123,7 +123,7 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.6',
-        Icono: 'Trending',
+        banios: '2',
     },
     {
         id: 12,
@@ -134,6 +134,6 @@ export default [
         Superficie: '230ft',
         CostoRenta: '$440/m',
         Calificacion: '4.4',
-        Icono: 'Trending',
+        banios: '3',
     },
 ];
