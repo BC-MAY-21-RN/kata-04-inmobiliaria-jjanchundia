@@ -7,30 +7,54 @@ import {Text, View, StyleSheet, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const ListItem = (item) => {
-    console.log(item.dataCards.item)
     const {Nombre, image, Direccion, NumeroHabitaciones,
         Superficie, CostoRenta, Calificacion, banios } = item.dataCards.item;
-        console.log(banios);
   return (
     <View style={styles.container}>
           <View>
             <Image style={styles.imagen} source={{uri:image}} />
             <View style={styles.calificacion}>
-              <Text style={styles.text}>
-                {/* <Icon name="rocket" size={18} color="#900" /> */}
-                {/* <Icon name="close" size={30} color="#ffffff" /> */}
-                {Calificacion}
-              </Text>
+                <Text style={styles.text}>
+                  <Icon name="star" size={20} color="#EEBA00" />
+                  {Calificacion}
+                </Text>
               </View>
-            </View>
+          </View>
+          <View>
           <View>
             <Text style={styles.nombre}>{Nombre}</Text>
-            <Text style={styles.direccion}>{Direccion}</Text>
-            <Text style={styles.nhabitaciones}>{NumeroHabitaciones}</Text>
-            <Text style={styles.superficie}>{Superficie}</Text>
-            <Text style={styles.banio}>{banios}</Text>
-            <Text style={styles.costo}>{CostoRenta}</Text>
           </View>
+          <View>
+            <Text style={styles.direccion}>
+              <Icon style={styles.direccionV} name="location-arrow" size={20} color="#000000" />
+              &nbsp;&nbsp;{Direccion}
+            </Text>
+          </View>
+          <View>
+            <Text style={styles.nhabitaciones}>
+            <Icon name="bed" size={20} color="#000000" />
+              &nbsp;&nbsp;{NumeroHabitaciones}
+            </Text>
+          </View>
+          <View>
+            <Text style={styles.banio}>
+              <Icon name="bath" size={20} color="#000000" />
+              &nbsp;&nbsp;{banios}
+            </Text>
+          </View>
+          <View>
+            <Text style={styles.superficie}>
+              <Icon name="window-maximize" size={20} color="#000000" />
+              &nbsp;&nbsp;{Superficie}
+              </Text>
+          </View>
+          <View>
+            <Text style={styles.costo}>
+              {CostoRenta}
+            </Text>
+            <Icon style={styles.heart} name="heart" size={20} color="#000000" />
+          </View>
+        </View>
     </View>
   )
 }
@@ -48,7 +72,7 @@ const styles = StyleSheet.create({
   },
   imagen: {
     width: 100,
-    height: 120,
+    height: 138,
     marginLeft:15,
     marginTop: 10,
     borderRadius:20,
@@ -56,7 +80,6 @@ const styles = StyleSheet.create({
   nombre: {
     left: 20,
     alignItems: 'center',
-    // bottom: 30,
     top: 10,
     fontWeight: 'bold',
     fontSize: 29,
@@ -71,27 +94,32 @@ const styles = StyleSheet.create({
     fontSize: 15,
     alignItems: 'center',
     top:25,
-    left:50,
+    left:20,
     fontWeight: 'bold',
   },
   banio:{
     fontSize: 15,
     alignItems: 'center',
-    bottom:16,
-    left:110,
+    top:3,
+    left:88,
     fontWeight: 'bold',
   },
   superficie:{
     fontSize: 15,
     alignItems: 'center',
-    top:4,
-    left:175,
+    bottom:18,
+    left:145,
     fontWeight: 'bold',
+  },
+  icono:{
+    fontSize: 15,
+    top:10,
+    left:100,
   },
   costo:{
     fontSize: 20,
     alignItems: 'center',
-    bottom:10,
+    bottom:4,
     left:15,
     fontWeight: 'bold',
   },
@@ -107,6 +135,10 @@ const styles = StyleSheet.create({
   text:{
     fontWeight: 'bold',
     fontSize:15,
+  },
+  heart:{
+    bottom:28,
+    left:200,
   },
 });
 

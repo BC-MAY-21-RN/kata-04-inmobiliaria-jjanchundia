@@ -7,7 +7,7 @@ export default [
     {
         id: 1,
         Nombre: 'The Willows',
-        image: 'https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/17/26/1726359_v5.jpeg',
+        image: 'https://media-cdn.tripadvisor.com/media/photo-s/1c/d3/b3/73/exterior.jpg',
         Direccion:'3517 W. Gray St. Utica',
         NumeroHabitaciones: '2',
         Superficie: '230ft',
